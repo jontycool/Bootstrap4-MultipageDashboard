@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script src="https://kit.fontawesome.com/ab9588bd05.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Dashboard</title>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">DASHBOARD</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <i class="fas fa-angle-down"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav">
+          <li class="nav-item px-2">
+            <a href="index.html" class="nav-link">Dashboard</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="posts.html" class="nav-link">Posts</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="categories.html" class="nav-link">Categories</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="users.html" class="nav-link">Users</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown mr-3">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              <i class="fas-fa-user"></i> Welcome Tathagat
+            </a>
+            <div class="dropdown-menu">
+              <a href="profile.html" class="dropdown-item">
+                <i class="fas fa-user-circle"></i> Profile
+              </a>
+              <a href="settings.html" class="dropdown-item">
+                <i class="fas fa-cog"></i> Settings
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="login.html" class="nav-link">
+              <i class="fas fa-sign-out-alt"></i> Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header id="main-header" class="py-2 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>
+            <i class="fas fa-user"></i> Edit Profile
+          </h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Actions And Buttons -->
+  <section id="actions" class="py-4 mb-4 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <a href="index.html" class="btn btn-dark btn-block">
+            <i class="fas fa-arrow-left"></i> Back To Dashboard
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="index.html" class="btn btn-success btn-block">
+            <i class="fas fa-lock"></i> Change Password
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="index.html" class="btn btn-danger btn-block">
+            <i class="fas fa-trash"></i> Delete Account
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Profile -->
+  <section id="profile">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="card">
+            <div class="card-header">
+              <h4>Edit Profile</h4>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" value="Tathagat Mohanty">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" value="tathagat.mohanty@mail.com">
+                </div>
+                <div class="form-group">
+                  <label for="name">Bio</label>
+                  <textarea name="editor1"
+                    class="form-control">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate a harum laudantium tenetur impedit delectus et sed nesciunt illo quasi, nostrum saepe dolorum consequuntur accusamus fuga totam eveniet minima beatae animi expedita aut hic recusandae deleniti? Enim vero dicta doloremque laudantium, iste magni accusantium sint voluptatem cum suscipit qui esse?</textarea>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="lead text-center">
+            Copyright &copy; <span id="year"></span>
+            JLABS Dashboard
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="http://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.ckeditor.com/4.12.1/standard/ckeditor.js"></script>
+
+  <script>
+    // Get the current year for the copyright
+    $("#year").text(new Date().getFullYear());
+
+    // CKEditor
+    CKEDITOR.replace('editor1');
+  </script>
+</body>
+
+</html>
